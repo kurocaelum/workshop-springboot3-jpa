@@ -67,6 +67,11 @@ public class OrderItem implements Serializable {
 		this.price = price;
 	}
 
+//	Padrao java EE de utilizar get no inicio
+	public Double getSubTotal() {
+		return price * quantity;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
