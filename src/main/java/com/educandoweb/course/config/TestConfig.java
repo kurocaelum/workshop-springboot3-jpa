@@ -22,7 +22,8 @@ import com.educandoweb.course.repositories.ProductRepository;
 import com.educandoweb.course.repositories.UserRepository;
 
 @Configuration
-@Profile("test")
+//@Profile("test")
+@Profile("dev")
 public class TestConfig implements CommandLineRunner {
 
 	@Autowired
